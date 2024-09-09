@@ -413,3 +413,19 @@ header {
     margin-top: 15px;
     font-size: 18px;
 }
+
+.whitepace {
+    text-align: start;
+    color: var(--branco-principal);
+}
+
+.whitepace h1 {
+    font-size: 40px;
+}
+
+.whitepace p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 24px;
+    line-height: 30px;
+}
