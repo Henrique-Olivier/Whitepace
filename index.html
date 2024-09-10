@@ -41,7 +41,16 @@
         </div>
     </section>
     <section class="container product-management">
-        <img src="img/Project-management-mobile.png" alt="">
+        <picture>
+            <!-- Mobile -->
+            <source srcset="./img/project-management-mobile.png" media="(max-width: 767px)">
+            <!-- Tablet -->
+            <source srcset="./img/Project-management-tablet.png" media="(min-width: 768px) and (max-width: 1024px)">
+            <!-- Desktop -->
+            <source srcset="./img/Project-management-desktop.png" media="(min-width: 1200px)">
+            <!-- Imagem padrão (fallback) -->
+            <img src="./img/Project-management-desktop.png" alt="Descrição da imagem">
+            </picture>
         <p class="product-management__texto">Images, videos, PDFs and audio files are supported. Create math expressions
             and diagrams directly from the
             app. Take photos with the mobile app and save them to a note.
@@ -50,7 +59,16 @@
         <div class="product-management_box">
 
         </div>
-        <img class="work-together_titulo" src="img/work-together-mobile.png" alt="">
+         <picture>
+            <!-- Mobile -->
+            <source srcset="./img/work-together-mobile.png" media="(max-width: 767px)">
+            <!-- Tablet -->
+            <source srcset="./img/work-together-tablet.png" media="(min-width: 768px) and (max-width: 1024px)">
+            <!-- Desktop -->
+            <source srcset="./img/work-together-desktop.png" media="(min-width: 1200px)">
+            <!-- Imagem padrão (fallback) -->
+            <img src="./img/work-together-desktop.png" alt="Descrição da imagem">
+            </picture>
         <p class="work-together_texto">With whitepace, share your notes with your colleagues and collaborate on them.
             You can also publish a note to the internet and share the URL with others.
         </p>
@@ -58,7 +76,16 @@
         <img class="work-together_img" src="img/Work Together Image.png" alt="">
     </section>
     <section class="container customise">
-        <img src="img/use-as-extension-mobile.png" alt="">
+        <picture>
+            <!-- Mobile -->
+            <source srcset="./img/use-as-extension-mobile.png" media="(max-width: 767px)">
+            <!-- Tablet -->
+            <source srcset="./img/use-as-extension-tablet.png" media="(min-width: 768px) and (max-width: 1024px)">
+            <!-- Desktop -->
+            <source srcset="./img/use-as-extension-desktop.png" media="(min-width: 1200px)">
+            <!-- Imagem padrão (fallback) -->
+            <img src="./img/use-as-extension-desktop.png" alt="Descrição da imagem">
+            </picture>
         <p class="customise_texto">Customise the app with plugins, custom themes and multiple text editors (Rich Text or
             Markdown). Or create
             your own scripts and plugins using the Extension API.
@@ -72,7 +99,16 @@
         <div class="you-needs_box">
 
         </div>
-        <img class="your-needs_titulo" src="img/customise-it-your-needs-mobile.png" alt="">
+        <picture>
+            <!-- Mobile -->
+            <source srcset="./img/customise-it-your-needs-mobile.png" media="(max-width: 767px)">
+            <!-- Tablet -->
+            <source srcset="./img/customise-it-to-your-needs-tablet.png" media="(min-width: 768px) and (max-width: 1024px)">
+            <!-- Desktop -->
+            <source srcset="./img/customise-it-your-needs-desktop.png" media="(min-width: 1200px)">
+            <!-- Imagem padrão (fallback) -->
+            <img src="./img/customise-it-your-needs-desktop.png" alt="Descrição da imagem">
+            </picture>
         <p class="you-needs_texto">
             Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create
             your own scripts and plugins using the Extension API.
@@ -81,42 +117,53 @@
 
     </section>
     <section class="container choose-your-plan">
-        <img src="img/choose-your-plan-mobile.png" alt="">
+        <picture>
+            <!-- Mobile -->
+            <source srcset="./img/choose-your-plan-mobile.png" media="(max-width: 767px)">
+            <!-- Tablet -->
+            <source srcset="./img/choose-your-plan-tablet.png" media="(min-width: 768px) and (max-width: 1024px)">
+            <!-- Desktop -->
+            <source srcset="./img/choose-your-plan-desktop.png" media="(min-width: 1200px)">
+            <!-- Imagem padrão (fallback) -->
+            <img src="./img/choose-your-plan-desktop.png" alt="Descrição da imagem">
+            </picture>
         <p class="choose-your-plan_texto">Whether you want to get organized, keep your personal life on track, or boost
             workplace productivity,
             Evernote has the right plan for you.
         </p>
-        <div class="plans">
-            <h2>Personal</h2>
-            <h1>$11.2</h1>
-            <p>Keep home and family on track</p>
-            <div class="topicos">
-                <img src="img/Icon.png" alt="">
-                <p>Sync unlimited devices</p>
+        <div class="plans-slider">
+            <div class="plans">
+                <h2>Personal</h2>
+                <h1>$11.2</h1>
+                <p>Keep home and family on track</p>
+                <div class="topicos">
+                    <img src="img/Icon.png" alt="">
+                    <p>Sync unlimited devices</p>
+                </div>
+                <div class="topicos">
+                    <img src="img/Icon.png" alt="">
+                    <p>10 Gb monthly uploads</p>
+                </div>
+                <div class="topicos">
+                    <img src="img/Icon.png" alt="">
+                    <p>200MB max. note size</p>
+                </div>
+                <div class="topicos">
+                    <img src="img/Icon.png" alt="">
+                    <p>Customize Home dashboard and access extra widgets</p>
+                </div>
+                <div class="topicos">
+                    <img src="img/Icon.png" alt="">
+                    <p>Connect primary Google Calendar account
+                    </p>
+                </div>
+                <div class="topicos">
+                    <img src="img/Icon.png" alt="">
+                    <p>Add due dates, reminders, and notifications to your tasks
+                    </p>
+                </div>
+                <button class="get-started_button">Get Started</button>
             </div>
-            <div class="topicos">
-                <img src="img/Icon.png" alt="">
-                <p>10 Gb monthly uploads</p>
-            </div>
-            <div class="topicos">
-                <img src="img/Icon.png" alt="">
-                <p>200MB max. note size</p>
-            </div>
-            <div class="topicos">
-                <img src="img/Icon.png" alt="">
-                <p>Customize Home dashboard and access extra widgets</p>
-            </div>
-            <div class="topicos">
-                <img src="img/Icon.png" alt="">
-                <p>Connect primary Google Calendar account
-                </p>
-            </div>
-            <div class="topicos">
-                <img src="img/Icon.png" alt="">
-                <p>Add due dates, reminders, and notifications to your tasks
-                </p>
-            </div>
-            <button class="get-started_button">Get Started</button>
         </div>
         <img class="slider" src="img/Slider.png" alt="">
     </section>
@@ -180,12 +227,55 @@
             Add your whole team as your needs grow.
         </p>
         <button class="get-started_button">
-            Try Taskey free <img src="img/arrow.png" alt="">
+            Try Taskey free &rarr;
         </button>
         <p> On a big team? Contact sales</p>
         <img src="img/App-icon.png" alt="">
     </section>
 
+    <footer>
+        <img class="footer-logo" src="img/Logo.png" alt="">
+        <p class="footer-text">whitepace was created for the new ways we live and work. 
+            We make beautyfully designed around the world
+        </p>
+        <div class="infos">
+            <div class="info-box">
+                <p><strong>Product</strong></p>
+                <p>Overview</p>
+                <p>Pricing</p>
+                <p>Customer stories</p>
+            </div>
+            <div class="info-box">
+                <p><strong>Resources</strong></p>
+                <p>Blog</p>
+                <p>Guides & tutorials</p>
+                <p>Help center</p>
+            </div>
+            <div class="info-box">
+                <p><strong>Company</strong></p>
+                <p>About us</p>
+                <p>Carrer</p>
+                <p>Media kit</p>
+            </div>
+        </div>
+        <h1>Try it Today</h1>
+        <p class="footer-text">Get started for free.
+            Add your whole team as your needs grow.
+        </p>
+        <button class="get-started_button">
+            Start Today &rarr;
+        </button>
+        <div class="btm">
+            <p class="language"><img src="img/globe.png" alt="">English <img src="img/down.png" alt=""></p> 
+            <p>Terms & privacy</p>
+            <p>Secury</p>
+            <p>Status</p>
+            <p>©2021 Whitepace LLC.</p>
+        </div>
+        <div class="footer-line"></div>
+        <img src="img/Social Icon.png" alt="">
+    </footer>
+    
     <script src="app.js"></script>
 </body>
 
