@@ -1269,6 +1269,8 @@ footer .get-started_button {
 }
 
 @media screen and (min-width: 1920px) {
+    header { padding: 16px 220px;}
+    
     .banner {
         padding: 140px 220px;
     }
