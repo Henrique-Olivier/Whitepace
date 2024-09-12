@@ -11,20 +11,33 @@
 <body>
     <header>
         <a href=""><img src="/img/Logo.png" alt=""></a>
+        <div class="overlay left" onclick="fecharMenu()"></div>
         <div class="menu right">
+            <li onclick="fecharMenu()" class="close-menu">&times;</li>
             <button class="login-button">Login</button>
             <button class="banner__conteudo_button">Try Whitepace free &rarr;</button>
-            <li onclick="fecharMenu()" class="close-menu">&times;</li>
             <ul>Pruducts <img src="img/Down Arrow.png" alt="">
-
+                
             </ul>
-            <ul>Solutions</ul>
-            <ul>Resources</ul>
-            <ul>Pricing</ul>
+            <ul>Solutions </ul>
+            <ul>Resources </ul>
+            <ul>Pricing </ul>
         </div>
-        <button onclick="abrirMenu()">
-            <img src="img/Btn.png" alt="">
-        </button>
+        <div class="right_buttons">
+            <ul class="desktop-list">
+                <ul>Pruducts <img src="img/Down Arrow.png" alt="">
+                    
+                </ul>
+                <ul>Solutions <img src="img/Down Arrow.png" alt=""></ul>
+                <ul>Resources <img src="img/Down Arrow.png" alt=""></ul>
+                <ul>Pricing <img src="img/Down Arrow.png" alt=""></ul>
+            </ul>
+            <button class="login-button">Login</button>
+            <button class="banner__conteudo_button">Try Whitepace free &rarr;</button>
+            <button class="menu_hambuerguer" onclick="abrirMenu()">
+                <img src="img/Btn.png" alt="">
+            </button>
+        </div>
     </header>
     <section class="banner">
         <div class="banner__conteudo">
@@ -50,7 +63,7 @@
                 <!-- Desktop -->
                 <source srcset="./img/Project-management-desktop.png" media="(min-width: 1152px)">
                 <!-- Imagem padrão (fallback) -->
-                <img src="./img/Project-management-desktop.png" alt="Descrição da imagem">
+                <img src="./img/Project-management-tablet.png" alt="Descrição da imagem">
             </picture>
             <p class="product-management__texto">Images, videos, PDFs and audio files are supported. Create math
                 expressions
@@ -73,7 +86,7 @@
                 <!-- Desktop -->
                 <source srcset="./img/work-together-desktop.png" media="(min-width: 1152px)">
                 <!-- Imagem padrão (fallback) -->
-                <img src="./img/work-together-desktop.png" alt="Descrição da imagem">
+                <img src="./img/work-together-tablet.png" alt="Descrição da imagem">
             </picture>
             <p class="work-together_texto">With whitepace, share your notes with your colleagues and collaborate on
                 them.
@@ -93,7 +106,7 @@
                 <!-- Desktop -->
                 <source srcset="./img/use-as-extension-desktop.png" media="(min-width: 1152px)">
                 <!-- Imagem padrão (fallback) -->
-                <img src="./img/use-as-extension-desktop.png" alt="Descrição da imagem">
+                <img src="./img/use-as-extension-tablet.png" alt="Descrição da imagem">
             </picture>
             <p class="customise_texto">Customise the app with plugins, custom themes and multiple text editors (Rich
                 Text or
@@ -120,7 +133,7 @@
                 <!-- Desktop -->
                 <source srcset="./img/customise-it-your-needs-desktop.png" media="(min-width: 1152px)">
                 <!-- Imagem padrão (fallback) -->
-                <img src="./img/customise-it-your-needs-desktop.png" alt="Descrição da imagem">
+                <img src="./img/Customise-it-to-your-needs-tablet.png" alt="Descrição da imagem">
             </picture>
             <p class="you-needs_texto">
                 Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or
@@ -134,7 +147,7 @@
 
     </section>
     <section class="container choose-your-plan">
-        <picture>
+        <picture class="choose-your-plan_titulo">
             <!-- Mobile -->
             <source srcset="./img/choose-your-plan-mobile.png" media="(max-width: 767px)">
             <!-- Tablet -->
@@ -142,7 +155,7 @@
             <!-- Desktop -->
             <source srcset="./img/choose-your-plan-desktop.png" media="(min-width: 1152px)">
             <!-- Imagem padrão (fallback) -->
-            <img src="./img/choose-your-plan-desktop.png" alt="Descrição da imagem">
+            <img src="./img/choose-your-plan-tablet.png" alt="Descrição da imagem">
         </picture>
         <p class="choose-your-plan_texto">Whether you want to get organized, keep your personal life on track, or boost
             workplace productivity,
@@ -181,7 +194,7 @@
                 </div>
                 <button class="get-started_button">Get Started</button>
             </div>
-            <div class="plans">
+            <div class="plans blue">
                 <h2>Personal</h2>
                 <h1>$11.2</h1>
                 <p>Keep home and family on track</p>
@@ -258,7 +271,7 @@
             <!-- Desktop -->
             <source srcset="./img/your-work-desktop.png" media="(min-width: 1152px)">
             <!-- Imagem padrão (fallback) -->
-            <img src="./img/your-work-desktop.png" alt="Descrição da imagem">
+            <img src="./img/Your-work-everywhere-you-are-tablet.png" alt="Descrição da imagem">
         </picture>
         <p>Access your notes from your computer, phone or tablet by synchronising with various services, including
             whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal
@@ -268,21 +281,23 @@
     </section>
     <section class="container your-data">
         <img class="your-data_imagem" src="img/Element.png" alt="">
-        <picture>
-            <!-- Mobile -->
-            <source srcset="./img/11-your-data-mobile.png" media="(max-width: 767px)">
-            <!-- Tablet -->
-            <source srcset="./img/yout-data-tablet.png" media="(min-width: 768px) and (max-width: 1151)">
-            <!-- Desktop -->
-            <source srcset="./img/choose-your-plan-desktop.png" media="(min-width: 1152px)">
-            <!-- Imagem padrão (fallback) -->
-            <img src="./img/choose-your-plan-desktop.png" alt="Descrição da imagem">
-        </picture>
-        <p class="your-data_texto">The app is open source and your notes are saved to an open format, so you'll always
-            have access to them. Uses
-            End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
-        </p>
-        <button class="get-started_button">Read more <img src="img/arrow.png" alt=""></button>
+        <div class="your-data_conteudo">
+            <picture class="your-data_titulo">
+                <!-- Mobile -->
+                <source srcset="./img/11-your-data-mobile.png" media="(max-width: 767px)">
+                <!-- Tablet -->
+                <source srcset="./img/your-data-desktop.png" media="(min-width: 768px) and (max-width: 1151)">
+                <!-- Desktop -->
+                <source srcset="./img/your-data-desktop.png" media="(min-width: 1152px)">
+                <!-- Imagem padrão (fallback) -->
+                <img src="./img/your-data-desktop.png" alt="Descrição da imagem">
+            </picture>
+            <p class="your-data_texto">The app is open source and your notes are saved to an open format, so you'll always
+                have access to them. Uses
+                End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
+            </p>
+            <button class="get-started_button">Read more <img src="img/arrow.png" alt=""></button>
+        </div>
     </section>
     <section class="container sponsors">
         <picture>
@@ -291,28 +306,32 @@
             <!-- Tablet -->
             <source srcset="./img/our-sponsors-tablet.png" media="(min-width: 768px) and (max-width: 1151)">
             <!-- Desktop -->
-            <source srcset="./img/our-sponsors-desktop.png" media="(min-width: 1152px)">
+            <source srcset="./img/Our-sponsor-desktop.png" media="(min-width: 1152px)">
             <!-- Imagem padrão (fallback) -->
-            <img src="./img/our-sponsors-desktop.png" alt="Descrição da imagem">
+            <img src="./img/Our-sponsor-desktop.png" alt="Descrição da imagem">
         </picture>
-        <img src="img/Apple.png" alt="">
-        <img src="img/Microsoft.png" alt="">
-        <img src="img/Slack.png" alt="">
-        <img src="img/Google.png" alt="">
+        <div class="sponsors_logo">
+            <img src="img/Apple.png" alt="">
+            <img src="img/Microsoft.png" alt="">
+            <img src="img/Slack.png" alt="">
+            <img src="img/Google.png" alt="">
+        </div>
     </section>
     <section class="container favorite-apps">
         <img class="favorite-apps_image" src="img/Apps.png" alt="">
-        <h1 class="favorite-apps_titulo">Work with Your Favorite Apps Using whitepace</h1>
-        <p class="favorite-apps_texto">
-            Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the
-            tools you need for your project success.
-        </p>
-        <button class="get-started_button">
-            Read More <img src="img/arrow.png" alt="">
-        </button>
+        <div class="favorite-apps_conteudo">
+            <h1 class="favorite-apps_titulo">Work with Your Favorite Apps Using whitepace</h1>
+            <p class="favorite-apps_texto">
+                Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the
+                tools you need for your project success.
+            </p>
+            <button class="get-started_button">
+                Read More <img src="img/arrow.png" alt="">
+            </button>
+        </div>
     </section>
     <section class="container clients">
-        <picture>
+        <picture class="clients-titulo">
             <!-- Mobile -->
             <source srcset="./img/what-our-clients-says-mobile.png" media="(max-width: 767px)">
             <!-- Tablet -->
@@ -320,7 +339,7 @@
             <!-- Desktop -->
             <source srcset="./img/what-our-clients-says-desktop.png" media="(min-width: 1152px)">
             <!-- Imagem padrão (fallback) -->
-            <img src="./img/what-our-clients-says-desktop.png" alt="Descrição da imagem">
+            <img src="./img/what-our-clients-says-tablet.png" alt="Descrição da imagem">
         </picture>
         <div class="clients-slider">
             <div class="clients-card blue">
@@ -333,9 +352,13 @@
                 <div class="card-line">
 
                 </div>
-                <img class="avatar" src="img/Avatar-pink.png" alt="">
-                <h1>Oberon Shaw, MCH</h1>
-                <p>Head of Talent Acquisition, North America</p>
+                <div class="card-user">
+                    <img class="avatar" src="img/Avatar-pink.png" alt="">
+                    <div>
+                        <h1>Oberon Shaw, MCH</h1>
+                        <p>Head of Talent Acquisition, North America</p>
+                    </div>
+                </div>
             </div>
             <div class="clients-card">
                 <div class="card-text">
@@ -347,9 +370,13 @@
                 <div class="card-line">
 
                 </div>
-                <img class="avatar" src="img/Avatar-woman.png" alt="">
-                <h1>Oberon Shaw, MCH</h1>
-                <p>Head of Talent Acquisition, North America</p>
+                <div class="card-user">
+                    <img class="avatar" src="img/Avatar-woman.png" alt="">
+                    <div>
+                        <h1>Oberon Shaw, MCH</h1>
+                        <p>Head of Talent Acquisition, North America</p>
+                    </div>
+                </div>
             </div>
             <div class="clients-card blue">
                 <div class="card-text">
@@ -361,9 +388,13 @@
                 <div class="card-line">
 
                 </div>
-                <img class="avatar" src="img/Avatar-man.png" alt="">
-                <h1>Oberon Shaw, MCH</h1>
-                <p>Head of Talent Acquisition, North America</p>
+                <div class="card-user">
+                    <img class="avatar" src="img/Avatar-man.png" alt="">
+                    <div>
+                        <h1>Oberon Shaw, MCH</h1>
+                        <p>Head of Talent Acquisition, North America</p>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -383,18 +414,21 @@
     </section>
 
     <footer>
-        <picture>
-            <!-- Mobile -->
-            <source srcset="./img/Logo.png" media="(max-width: 767px)">
-            <!-- Tablet -->
-            <source srcset="./img/logo-footer-tablet.png" media="(min-width: 768px) and (max-width: 1151)">
-            <!-- Desktop -->
-            <source srcset="./img/Logo.png" media="(min-width: 1152px)">
-            <!-- Imagem padrão (fallback) -->
-            <img src="./img/Logo.png alt=" Descrição da imagem">
-        </picture>
-        <p class="footer-text">whitepace was created for the new ways we live and work.
-            We make beautyfully designed around the world
+        <div class="footer-text">
+            
+            <picture>
+                <!-- Mobile -->
+                <source srcset="./img/Logo.png" media="(max-width: 767px)">
+                <!-- Tablet -->
+                <source srcset="./img/logo-footer-tablet.png" media="(min-width: 768px) and (max-width: 1151)">
+                <!-- Desktop -->
+                <source srcset="./img/Logo.png" media="(min-width: 1152px)">
+                <!-- Imagem padrão (fallback) -->
+                <img src="./img/logo-footer-tablet.png" alt=" Descrição da imagem">
+            </picture>
+            <p >whitepace was created for the new ways we live and work.
+                We make beautyfully designed around the world
+        </div>
         </p>
         <div class="infos">
             <div class="info-box">
@@ -416,13 +450,15 @@
                 <p>Media kit</p>
             </div>
         </div>
-        <h1>Try it Today</h1>
-        <p class="footer-text">Get started for free. <br>
-            Add your whole team as your needs grow.
-        </p>
-        <button class="get-started_button">
-            Start Today &rarr;
-        </button>
+        <div class="whitepace_try-it">
+            <h1>Try it Today</h1>
+            <p class="footer-text">Get started for free. <br>
+                Add your whole team as your needs grow.
+            </p>
+            <button class="get-started_button">
+                Start Today &rarr;
+            </button>
+        </div>
         <div class="btm">
             <p class="language"><img src="img/globe.png" alt="">English <img src="img/down.png" alt=""></p>
             <p>Terms & privacy</p>
@@ -431,7 +467,7 @@
             <p>©2021 Whitepace LLC.</p>
         </div>
         <div class="footer-line"></div>
-        <img src="img/Social Icon.png" alt="">
+        <img  class="social_icons" src="img/Social Icon.png" alt="">
     </footer>
 
     <script src="app.js"></script>

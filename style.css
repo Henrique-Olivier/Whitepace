@@ -45,19 +45,49 @@ header {
     padding: 16px;
 }
 
+.right_buttons .login-button,
+.right_buttons .banner__conteudo_button {
+    display: none;
+}
+
+.desktop-list {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    width: 20%;
+}
+
+.overlay.left {
+    left: -100%;
+}
+
+.overlay.left.open {
+    left: 0;
+    transition: all 0.2s;
+}
+
 .menu {
     position: fixed;
     background-color: #f1f1f1;
     top: 0;
-    min-height: 1000px;
+    min-height: 100%;
     width: 80%;
     display: flex;
     flex-direction: column;
     padding: 20px;
     gap: 30px;
+    align-items: start;
 }
 
+.menu .banner__conteudo_button {
+    margin: 0;
 
+}
 
 .menu.right {
     transition: all 0.3s;
@@ -420,6 +450,10 @@ header {
     line-height: 30px;
 }
 
+.favorite-apps_image {
+    width: 100%;
+}
+
 .clients {
     background-color: var(--branco-principal);
 }
@@ -576,7 +610,29 @@ footer .get-started_button {
     margin: 15px 0;
 }
 
+
+
 @media screen and (min-width: 768px) {
+
+    header .banner__conteudo_button,
+    header .login-button {
+        margin: 0;
+    }
+
+    .right_buttons .login-button,
+    .right_buttons .banner__conteudo_button {
+        display: none;
+    }
+
+    .right_buttons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .desktop-list {
+        display: none;
+    }
+
     .banner {
         background-image: url("img/backgroundTablet.png");
         background-position: top;
@@ -606,6 +662,10 @@ footer .get-started_button {
     .banner__box {
         height: 387px;
         margin-top: 60px;
+    }
+
+    .menu .banner__conteudo_button {
+        margin: 0 0 0 0;
     }
 
     .container.product-management {
@@ -641,6 +701,10 @@ footer .get-started_button {
 
     .container.you-needs {
         padding: 140px 20px;
+    }
+
+    .choose-your-plan_titulo img {
+        width: 100%;
     }
 
     .plans {
@@ -734,6 +798,20 @@ footer .get-started_button {
 
     header a img {
         width: 191px;
+    }
+
+    .right_buttons .login-button,
+    .right_buttons .banner__conteudo_button {
+        display: block;
+    }
+
+    header .login-button,
+    header .banner__conteudo_button {
+        display: none;
+    }
+
+    .desktop-list {
+        display: none;
     }
 
     .banner {
@@ -837,7 +915,7 @@ footer .get-started_button {
         text-align: start;
     }
 
-    .customise-conteudo img{
+    .customise-conteudo img {
         width: 620px;
     }
 
@@ -863,7 +941,8 @@ footer .get-started_button {
         flex-direction: column;
         text-align: start;
         align-items: start;
-    }   
+    }
+
     .you-needs_conteudo img {
         width: 600px;
     }
@@ -875,5 +954,362 @@ footer .get-started_button {
 
     .you-needs_box {
         width: 530px;
+    }
+
+    .choose-your-plan_titulo img {
+        width: 100%;
+    }
+
+    .plans-slider {
+        margin-top: 60px;
+        align-items: center;
+    }
+
+    .plans {
+        min-width: 341px;
+        margin: 0;
+    }
+
+    .plans.transparent {
+        padding: 40px 44px;
+        height: 650px;
+        margin: 85px 0;
+    }
+
+    .topicos img {
+        width: 17px;
+    }
+
+    .work-everywhere p {
+        margin-top: 24px;
+    }
+
+    .work-everywhere img {
+        width: 100%;
+    }
+
+    .your-data {
+        flex-direction: row-reverse;
+    }
+
+    .your-data_conteudo {
+        text-align: start;
+    }
+
+    .your-data_conteudo .get-started_button {
+        margin: 60px 0 0 0;
+    }
+
+
+    .sponsors_logo img {
+        margin: 0 50px;
+    }
+
+    .favorite-apps {
+        background-image: url("./img/favoriteApps-Background-desktop.png");
+        background-size: contain;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .favorite-apps_conteudo {
+        text-align: start;
+        width: 460px;
+    }
+
+    .favorite-apps_titulo {
+        font-size: 64px;
+    }
+
+    .favorite-apps_image {
+        width: 528px;
+        height: 428px;
+    }
+
+    .favorite-apps .get-started_button {
+        margin: 60px 0 0 0;
+    }
+
+    .clients-titulo img {
+        width: 100%;
+    }
+
+    .clients-card {
+        padding: 60px 24px;
+    }
+
+    .avatar {
+        margin: 0;
+    }
+
+    .card-user {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .card-user img {
+        width: 95px;
+        height: 95px;
+    }
+
+    .card-user div {
+        width: 174px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: start;
+        justify-content: space-between;
+    }
+
+    .card-user h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .card-user p {
+        margin-top: 24px;
+    }
+
+    .whitepace {
+        text-align: center;
+    }
+
+    .whitepace h1 {
+        font-size: 72px;
+        width: 608px;
+        margin: auto;
+    }
+
+    .whitepace p {
+        font-size: 24px;
+    }
+
+    .whitepace img {
+        width: 260px;
+    }
+
+    .whitepace .get-started_button {
+        margin: 60px auto;
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .infos {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .footer-text {
+        margin: 0;
+        width: 240px;
+    }
+
+    .whitepace_try-it {
+        margin-left: 10px;
+    }
+
+    .whitepace_try-it h1 {
+        font-size: 28px;
+    }
+
+    .whitepace_try-it p {
+        margin-top: 24px;
+    }
+
+    .social_icons {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    header {
+        padding: 32px 16px;
+    }
+
+    .menu_hambuerguer {
+        display: none;
+    }
+
+    .desktop-list {
+        display: flex;
+        width: 551px;
+        color: var(--branco-principal);
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .desktop-list ul {
+        text-align: end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }   
+
+    .banner__conteudo {
+        width: 95%;
+    }
+    .banner__conteudo p{
+        width: 95%;
+    }
+
+    .banner__box {
+        height: 456px;
+    }
+
+    .banner_text {
+        justify-content: center;
+    }
+
+    .container {
+        padding: 100px 32px;
+    }
+
+    .work-together {
+        justify-content: space-between;
+    }
+
+    .product-management_box {
+        width: 50%;
+        height: 448px;
+    }
+
+    .work-together_img {
+        width: 583px;
+    }
+
+    .customise_box {
+        width: 50%;
+        height: 479px;
+    }
+
+    .you-needs_box {
+        width: 50%;
+        height: 499px;
+    }
+
+    .plans-slider {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .plans.blue {
+        min-height: 761px;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .work-everywhere {
+        text-align: center;
+    }
+    .work-everywhere img{
+        width: 80%;
+    }
+    .work-everywhere p{
+        margin: 24px auto;
+        width: 80%;
+    }
+
+    .work-everywhere .get-started_button {
+        margin: 60px auto;
+    }
+
+    .your-data_imagem {
+        width: 681px;
+    }
+
+    .sponsors_logo img {
+        margin: 0 70px;
+    }
+
+    .favorite-apps_conteudo {
+        width: 694px;
+    }
+
+    .favorite-apps_titulo {
+        font-size: 72px;
+        margin: 0;
+    }
+
+    .favorite-apps {
+        justify-content: space-around;
+        gap: 100px;
+    }
+
+    .clients {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infos {
+        margin: 0 auto;
+    }
+
+    .clients-card {
+        width: 437px;
+
+    }
+
+    footer {
+        padding: 140px 32px 0 32px;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .banner {
+        padding: 140px 220px;
+    }
+
+    .banner__box {
+        width: 820px;
+        height: 549px;
+    }
+
+    .container {
+        padding: 140px 220px;
+    }
+
+    .product-management_box {
+        width: 50%;
+        height: 547px;
+    }
+
+    .work-together_img {
+        width: 710px;
+    }
+
+    .customise_box {
+        width: 686px;
+        height: 479px;
+    }
+
+    .you-needs_box {
+        width: 714px;
+        height: 532px;
+    }
+
+    .your-data_titulo img {
+        width: 600px;
+    }
+
+    .sponsors {
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        padding: 140px 220px 0 220px;
     }
 }
